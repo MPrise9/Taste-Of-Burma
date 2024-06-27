@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste Of Burma</title>
+    <link rel="icon" type="image" href="images/tasteofburma.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f9f9f9;
+      }
+
+      header {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+      }
+      header h1,
+      #our-menu h2,
+      #about-us h2 , #contact {
+        text-transform: uppercase;
+        font-family: "Playfair Display SC", serif;
+        color: #121111;
+        padding: 10px 0;
+        margin: 10px;
+      }
+      header p {
+        font-family: lato;
+        padding: 10px 0;
+      }
+      .btn {
+        background-color: #973131;
+        display: block;
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: 5px;
+        margin: 10px auto;
+      }
+      nav {
+        padding: 20px;
+        text-align: center;
+        background-color: #cdb5a5;
+      }
+      nav a {
+        padding: 0 20px;
+        text-decoration: none;
+        color: #49281a;
+        font-weight: normal;
+        font-family: lato;
+      }
+      #our-menu .menu {
+        font-family: lato;
+        padding: 20px 0;
+        margin-left: 10px;
+      }
+      .card {
+        width: 250px;
+        border: 1px solid rgb(226, 226, 194);
+        text-align: center;
+        margin: 50px;
+        padding: 10px;
+        font-family: lato;
+        border-radius: 10px;
+      }
+      .card-title,
+      .card-text {
+        padding: 10px;
+      }
+      .card-img {
+        width: 200px;
+      }
+      #about-us p,
+      #contact-us p {
+        padding: 10px;
+        text-align: justify;
+        line-height: 1.5;
+        font-family: lato;
+      }
+      form {
+        width: 400px;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+      }
+      form div {
+        padding: 10px 0;
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        width: 250px;
+        padding: 5px 0;
+        border-radius: 8px;
+        outline: 1px solid;
+        border: none;
+      }
+      #message {
+        display: flex;
+      }
+      #message textarea {
+        width: 260px;
+        padding: 5px;
+        border-radius: 8px;
+        outline: none;
+      }
+      footer {
+        margin: 50px 0;
+      }
+      footer p {
+        text-align: center;
+        font-family: lato;
+        border-top: 1px solid #000;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header section-->
+    <header>
+      <h1>Welcome to Taste of Burma</h1>
+      <p>Enjoy authentic Burmese cuisine!</p>
+      <a href="#" class="btn">Explore Our Menu</a>
+    </header>
+
+    <!-- nav section  -->
+    <nav>
+      <a href="#header">Home</a>
+      <a href="#our-menu">Menu</a>
+      <a href="#about-us">About Us</a>
+      <a href="#contact-us">Contact</a>
+    </nav>
+
+    <!-- our menu section  -->
+    <section id="our-menu">
+      <h2>Our Menu</h2>
+      <!--Appetizers-->
+      <div class="menu">
+        <h3>Appetizers</h3>
+        <div class="card">
+          <img
+            class="card-img"
+            src="images/Samosas.jpeg"
+            alt="Samosas"
+            width="200"
+            height="200"
+          />
+          <h3 class="card-title">Samosas</h3>
+          <p class="card-text">$3</p>
+          <p class="card-text">
+            Ingredients - potatoes, onions, peas, beef or chicken
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="images/Laphet - Tea Leaf Salad.jpeg"
+            alt="Laphet Thoke"
+            width="200"
+            height="200"
+          />
+          <h3 class="card-title">Laphet Thoke</h3>
+          <p class="card-text">$10</p>
+          <p class="card-text">
+            Ingredients - cabbage, tomatoes, peanuts, shrimp floss, sesame
+            seeds, green chili, lemon juice, spicy tea leaf.
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="images/Spring Rolls.jpeg"
+            alt="Spring Rolls"
+            width="200"
+            height="200"
+          />
+          <h3 class="card-title">Spring Rolls</h3>
+          <p class="card-text">$5</p>
+          <p class="card-text">
+            Ingredients - ground port or chicken and vegetables plus seasoning.
+          </p>
+        </div>
+      </div>
+      <!--Main Coursess-->
+      <div class="menu">
+        <h3>Main Courses</h3>
+        <div class="card">
+          <img
+            class="card-img"
+            src="images/Mohingajpeg.jpeg"
+            alt="Mohinga"
+            width="200"
+            height="200"
+          />
+          <h3 class="card-title">Mohinga</h3>
+          <p class="card-text">$10</p>
+          <p class="card-text">
+            In the heart of Burma, Mohinga is more than a meal. A taste of
+            Mohinga is a journey to the vibrant streets of Myanmar.
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="images/Ohn No Khao Swe.jpeg"
+            alt="Ohn No Khao Swe"
+            width="200"
+            height="200"
+          />
+          <h3 class="card-title">Ohn No Khao Swe</h3>
+          <p class="card-text">$10</p>
+          <p class="card-text">
+            In every sip of Ohn No Khao Swe is like a warm hug from Burma,
+            richand unforgettable.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            class="card-img"
+            src="images/Shan Khao Swé.jpeg"
+            alt="Shan Khao Swe"
+            width="200"
+            height="200"
+          />
+          <h3 class="card-title">Shan Khao Swe</h3>
+          <p class="card-text">$10</p>
+          <p class="card-text">
+            Every bite of Shan Khao Swe is a journey through the hills of Burma.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---About Us Section-->
+    <section id="about-us">
+      <h2 id="about-us">About Us</h2>
+      <p>
+        At Taste of Burma, we bring the rich and diverse flavors of Burmese
+        cuisine to your table. Our restaurant is dedicated to providing an
+        authentic dining experience that captures the essence of Myanmar's
+        culinary traditions. From the bustling streets of Yangon to the serene
+        countryside, we have curated a menu that showcases the best of Burmese
+        food.
+      </p>
+      <p>
+        Our chefs are passionate about using traditional recipes and fresh,
+        high-quality ingredients to create dishes that are both delicious and
+        memorable. Whether you are a fan of spicy curries, hearty noodle soups,
+        or refreshing salads, you will find something to love at Taste of Burma.
+      </p>
+      <p>
+        Thank you for choosing Taste of Burma. We look forward to serving you
+        and making your dining experience truly special.
+      </p>
+    </section>
+
+    <!-- contact section  -->
+    <section id="contact-us">
+      <h2 id="contact">Contact Us</h2>
+      <p>
+        We're here to help! Whether you have a question, need assistance, or
+        want to place an order, our team is ready to assist you. Fill out the
+        form below, and we will get back to you as soon as possible.
+      </p>
+      <form action="">
+        <div>
+          <label for="your-name">Your Name:</label>
+          <input type="text" name id="Your Name" />
+        </div>
+        <div>
+          <label for="your-email">Your Email:</label>
+          <input type="text" name id="YourEmail" />
+        </div>
+        <div>
+          <label for="your-phone">Your Phone:</label>
+          <input type="text" name id="YourPhone" />
+        </div>
+        <div>
+          <label for="your-address">Your Address:</label>
+          <input type="text" name id="YourAddress" />
+        </div>
+        <div id="message">
+          <label for="your-message">Your Message:</label>
+          <textarea name="your-message" rows="5"></textarea>
+        </div>
+        <input class="btn" type="submit" value="Send Message" />
+      </form>
+    </section>
+
+    <!-- footer section  -->
+    <section id="footer">
+      <footer>
+        <p>Copyright &copy; 2024. Taste Of Burma. All Rights Reserved.</p>
+      </footer>
+    </section>
+  </body>
+</html>
